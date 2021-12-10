@@ -10,4 +10,13 @@ export class AppComponent {
   title = 'Booking Demo';
 
   constructor(private _authService: AuthService){ }
+
+  loggedIn() : boolean {
+    return this._authService.loggedIn()
+  }
+
+  logoutUser() {
+    return this._authService.logoutUser()
+  }
+
 }
